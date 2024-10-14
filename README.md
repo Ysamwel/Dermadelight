@@ -42,9 +42,9 @@ Welcome to the DERMADELIGHT E-Commerce Platform! This project is built using the
 
 1. **Clone the repository**:
 
-   ```git clone https://github.com/Ysamwel/DERMADELIGHT-Ecommerce.git```
+   ```git clone https://github.com/Ysamwel/Dermadelight.git```
 
-   ```cd DERMADELIGHT-Ecommerce```
+   ```cd Dermadelight```
 
 
 Install dependencies for both frontend and backend:
@@ -72,7 +72,7 @@ Create a .env file in the backend directory and add the following:
 
 ```JWT_SECRET=your_jwt_secret```
 
-```MPESA_SECRET_KEY=your_stripe_secret_key```
+```MPESA_SECRET_KEY=your_mpesa_secret_key```
 
 Create a .env file in the frontend directory and add the following:
 
