@@ -61,8 +61,8 @@ export const addProductFormElements = [
       { id: "men", label: "Men" },
       { id: "women", label: "Women" },
       { id: "kids", label: "Kids" },
-      { id: "unisex", label: "Unisex" },
-      { id: "footwear", label: "Footwear" },
+      { id: "albino", label: "Albino" },
+      { id: "eczema", label: "Eczema" },
     ],
   },
   {
@@ -72,10 +72,10 @@ export const addProductFormElements = [
     options: [
       { id: "nivea", label: "Nivea" },
       { id: "coty", label: "Coty" },
-      { id: "nice&lovely", label: "Nice&Lovely" },
+      { id: "palmers", label: "Palmers" },
       { id: "l'Oreal", label: "L'Oreal" },
       { id: "zara", label: "Zara" },
-      { id: "h&m", label: "H&M" },
+      { id: "vaseline", label: "Vaseline" },
     ],
   },
   {
@@ -128,13 +128,13 @@ export const shoppingViewHeaderMenuItems = [
     path: "/shop/listing",
   },
   {
-    id: "footwear",
-    label: "Footwear",
+    id: "albino",
+    label: "Albino",
     path: "/shop/listing",
   },
   {
-    id: "accessories",
-    label: "Accessories",
+    id: "eczema",
+    label: "Eczema",
     path: "/shop/listing",
   },
   {
@@ -148,17 +148,17 @@ export const categoryOptionsMap = {
   men: "Men",
   women: "Women",
   kids: "Kids",
-  accessories: "Accessories",
-  footwear: "Footwear",
+  eczema: "Eczema",
+  albino: "Albino",
 };
 
 export const brandOptionsMap = {
-  nike: "Nike",
-  adidas: "Adidas",
-  puma: "Puma",
-  levi: "Levi",
+  nivea: "Nivea",
+  coty: "Coty",
+  palmers: "Palmers",
+  "l'Oreal": "L'Oreal", // Properly enclosed with double quotes
   zara: "Zara",
-  "h&m": "H&M",
+  vaseline: "Vaseline",
 };
 
 export const filterOptions = {
@@ -166,16 +166,16 @@ export const filterOptions = {
     { id: "men", label: "Men" },
     { id: "women", label: "Women" },
     { id: "kids", label: "Kids" },
-    { id: "accessories", label: "Accessories" },
-    { id: "footwear", label: "Footwear" },
+    { id: "eczema", label: "Eczema" },
+    { id: "albino", label: "Albino" },
   ],
   brand: [
-    { id: "nike", label: "Nike" },
-    { id: "adidas", label: "Adidas" },
-    { id: "puma", label: "Puma" },
-    { id: "levi", label: "Levi's" },
+    { id: "nivea", label: "Nivea" },
+    { id: "coty", label: "Coty" },
+    { id: "palmers", label: "Palmers" },
+    { id: "l'Oreal", label: "L'Oreal" },
     { id: "zara", label: "Zara" },
-    { id: "h&m", label: "H&M" },
+    { id: "vaseline", label: "Vaseline" },
   ],
 };
 

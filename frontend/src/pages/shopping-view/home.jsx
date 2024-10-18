@@ -3,19 +3,19 @@ import bannerOne from "../../assets/banner-1.webp";
 import bannerTwo from "../../assets/banner-2.webp";
 import bannerThree from "../../assets/banner-3.webp";
 import {
-  Airplay,
+  Worm,
   BabyIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
-  CloudLightning,
-  Heater,
-  Images,
-  Shirt,
-  ShirtIcon,
-  ShoppingBasket,
+  UserIcon,
+  SprayCan,
+  CloudSnow,
+  Milk,
+  User,
+  TreePalm,
   UmbrellaIcon,
-  WashingMachine,
-  WatchIcon,
+  Amphora,
+  Wand,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { useEffect, useState } from "react";
@@ -32,20 +32,20 @@ import ProductDetailsDialog from "@/components/shopping-view/product-details";
 import { getFeatureImages } from "@/store/common-slice";
 
 const categoriesWithIcon = [
-  { id: "men", label: "Men", icon: ShirtIcon },
-  { id: "women", label: "Women", icon: CloudLightning },
+  { id: "men", label: "Men", icon: User },
+  { id: "women", label: "Women", icon: UserIcon },
   { id: "kids", label: "Kids", icon: BabyIcon },
-  { id: "accessories", label: "Accessories", icon: WatchIcon },
-  { id: "footwear", label: "Footwear", icon: UmbrellaIcon },
+  { id: "eczema", label: "Eczema", icon: Wand },
+  { id: "albino", label: "Albino", icon: UmbrellaIcon },
 ];
 
 const brandsWithIcon = [
-  { id: "nike", label: "Nike", icon: Shirt },
-  { id: "adidas", label: "Adidas", icon: WashingMachine },
-  { id: "puma", label: "Puma", icon: ShoppingBasket },
-  { id: "levi", label: "Levi's", icon: Airplay },
-  { id: "zara", label: "Zara", icon: Images },
-  { id: "h&m", label: "H&M", icon: Heater },
+  { id: "nivea", label: "Nivea", icon: Milk },
+  { id: "coty", label: "Coty", icon: Amphora },
+  { id: "palmers", label: "Palmers", icon: TreePalm },
+  { id: "l'Oreal", label: "L'Oreal", icon: Worm },
+  { id: "zara", label: "Zara", icon: CloudSnow },
+  { id: "vaseline", label: "Vaseline", icon: SprayCan },
 ];
 function ShoppingHome() {
   const [currentSlide, setCurrentSlide] = useState(0);

@@ -162,7 +162,7 @@ function ShoppingListing() {
                   size="sm"
                   className="flex items-center gap-1"
                 >
-                  <ArrowUpDownIcon className="h-4 w-4" />
+                  <ArrowUpDownIcon className="h-4 w-4 text-green-500" />
                   <span>Sort by</span>
                 </Button>
               </DropdownMenuTrigger>
