@@ -16,18 +16,21 @@ const shopReviewRouter = require("./routes/shop/review-routes");
 
 const commonFeatureRouter = require("./routes/common/feature-routes");
 
-// Create a database connection using environment variable for MongoDB URI
-mongoose
-  .connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  })
-  .then(() => console.log("MongoDB connected"))
-  .catch((error) => console.log(error));
-
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
+// MongoDB connection
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => {
+    console.log("MongoDB connected");
+    app.listen(PORT, () => console.log(`Server is now running on port ${PORT}`));
+  })
+  .catch((error) => {
+    console.error("MongoDB connection failed:", error);
+    process.exit(1); // Exit the process with failure code
+  });
+
+// Middleware
 app.use(
   cors({
     origin: "http://localhost:5173",
@@ -45,6 +48,8 @@ app.use(
 
 app.use(cookieParser());
 app.use(express.json());
+
+// Routes
 app.use("/api/auth", authRouter);
 app.use("/api/admin/products", adminProductsRouter);
 app.use("/api/admin/orders", adminOrderRouter);
@@ -57,5 +62,3 @@ app.use("/api/shop/search", shopSearchRouter);
 app.use("/api/shop/review", shopReviewRouter);
 
 app.use("/api/common/feature", commonFeatureRouter);
-
-app.listen(PORT, () => console.log(`Server is now running on port ${PORT}`));
